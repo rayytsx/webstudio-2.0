@@ -47,7 +47,7 @@ span {
 }
 header {
   height: 80px;
-  position: fixed;
+  display: block;
 }
 .promo {
   background: url(./img/Img.png) center/cover no-repeat;
@@ -70,7 +70,7 @@ h1 {
 
   color: #ffffff;
 }
-.btr {
+.btn {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -91,7 +91,7 @@ h1 {
   margin: 0 auto;
   margin-top: 30px;
 }
-.btr {
+.btn {
   width: 216px;
   height: 50px;
 }
@@ -114,7 +114,7 @@ h1 {
   letter-spacing: 0.02em;
 
   color: #212121;
-  text-decoration: none;
+  list-style: none;
 }
 .feature {
   padding: 34px 0 34px;
@@ -145,4 +145,55 @@ h1 {
   /* or 171% */
 
   letter-spacing: 0.03em;
+}
+.btn_open {
+  color: white;
+  background-color: #2196f3;
+  border: none;
+}
+
+.btn_close {
+  top: 6px;
+  left: 492px;
+  position: relative;
+
+  border: none;
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 100%;
+  background-color: white;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.is-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+span {
+  color: black;
 }
