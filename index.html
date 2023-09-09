@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,11 +33,11 @@
           </div>
           <div class="menu_contact">
             <a href="mailto:info@devstudio.com">
-              <img src="./img/page1/envelope.svg" alt="" />
+              <i class="fa-regular fa-envelope fa-bounce"></i>
               info@devstudio.com</a
             >
             <a href="tel:+380961111111">
-              <img src="./img/page1/smartphone.svg" alt="" /> +38 096 111 11
+              <i class="fa-solid fa-mobile-screen fa-shake"></i> +38 096 111 11
               11</a
             >
           </div>
@@ -109,8 +106,24 @@
           </ul>
         </div>
       </section>
+      <section class="what_we_do">
+        <div class="container">
+          <h2 class="what_we_do_title">Чим ми займаємося?</h2>
+          <ul class="what_we_do_items">
+            <li class="what_we_do_item"><img src="./img/typing.png" alt="typing"> <p class="what_we_do_desc">Десктопні додатки</p></li>
+            <li class="what_we_do_item"><img src="./img/choose.png" alt="choose"> <p class="what_we_do_desc">Мобільні додатки</p></li>
+            <li class="what_we_do_item"><img src="./img/color.png" alt="color"> <p class="what_we_do_desc">Дизайнерські рішення</p></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-m btn_close" data-close-modal>&times;</button>
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/04de09b3f4.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </body>
 </html>
